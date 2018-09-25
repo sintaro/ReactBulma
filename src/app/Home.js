@@ -7,7 +7,7 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      cards: 2
+      cards: 1
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -15,9 +15,9 @@ class Home extends React.Component {
 
   handleClick(selectedChoice){
     var cards = this.state.cards;
-    if (selectedChoice === "ADD"){
+    if (selectedChoice === "ADD" && cards < 8){
       cards++;
-    } else if (selectedChoice === "REMOVE" && cards > 0){
+    } else if (selectedChoice === "REMOVE" && cards > 1){
       cards--;
     }
     this.setState({
@@ -48,13 +48,13 @@ class Home extends React.Component {
         </section>
         <section className="card-container">
           <div className="columns is-centered">
-            <div className="column is-half columns">              
+            <div className="column is-narrow columns">              
               {this.createCards()}
             </div>
           </div>
         </section>
         <section className="button-section">
-          <CardControl clickHandler={(selectedChoice) => this.handleClick(selectedChoice)}/>
+          <CardControl cardCount={this.state.cards} clickHandler={(selectedChoice) => this.handleClick(selectedChoice)}/>
         </section>
       </main>
     )

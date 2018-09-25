@@ -34,44 +34,4 @@ body {
   margin: 0;
 }
 
-.main-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-container {
-  height: 330px;
-}
-
-.button-section {
-  display: flex;
-	flex-direction: column;
-}
-
-.button-section {
-  flex: 1;
-}
-
-.button-container {
-  display: flex;
-	flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  align-items: center;
-}
-
-.box {
-  padding: 0.5rem 1.25rem;
-}
-
-.button-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.button-wrapper * {
-  flex: 0 0 100%;
-}
+@import './app/home/Home.scss';
