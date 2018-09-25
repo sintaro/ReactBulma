@@ -8,14 +8,14 @@ class CardControl extends React.Component {
                     <div className="box">
                         <div className="columns">
                             <div className="column has-text-centered button-wrapper">
-                                <button className="button is-primary">
+                                <button className="button is-primary" onClick={() => this.props.clickHandler("ADD")}>
                                     <span className="icon"><i className="fas fa-arrow-up fa-lg"></i></span>
                                 </button>
                                 <p className="is-italic has-text-weight-light">Add</p>
                             </div>
                             <div className="is-divider-vertical" data-content="OR"></div>
                             <div className="column has-text-centered button-wrapper">
-                                <button className="button is-primary">
+                                <button className="button is-primary"  onClick={() => this.props.clickHandler("REMOVE")}>
                                     <span className="icon"><i className="fas fa-arrow-down fa-lg"></i></span>
                                 </button>
                                 <p className="is-italic has-text-weight-light">Remove</p>
