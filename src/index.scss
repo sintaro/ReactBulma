@@ -34,4 +34,9 @@ body {
   margin: 0;
 }
 
+.navbar-menu {
+  flex-grow: 0;
+}
+
 @import './app/home/Home.scss';
+@import './app/tabs/Tabs.scss';

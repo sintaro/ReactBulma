@@ -1,0 +1,12 @@
+@import '../../../node_modules/bulma-extensions/bulma-carousel/dist/css/bulma-carousel.sass';
+@import '../../../node_modules/bulma-extensions/bulma-accordion/dist/css/bulma-accordion.sass';
+  
+  #tab-content{
+      .tab {
+          display: none;
+      }
+
+      .is-active {
+          display: block;
+      }
+  }

@@ -38,13 +38,27 @@ class Header extends React.Component {
           <div className="navbar-start">
             <NavLink
               className="navbar-item"
-              to="/test"
+              to="/tabs"
               activeClassName="is-active"
             >
               <span className="icon has-text-primary" style={{ marginRight: 5 }}>
-                <i className="fas fa-code"></i>
+                <i className="fas fa-columns"></i>
               </span>
-              Test
+              Tabs
+            </NavLink>
+          </div>
+        </div>
+        <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
+          <div className="navbar-start">
+            <NavLink
+              className="navbar-item"
+              to="/pagination"
+              activeClassName="is-active"
+            >
+              <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                <i className="fas fa-ellipsis-h"></i>
+              </span>
+              Pagination
             </NavLink>
           </div>
         </div>
